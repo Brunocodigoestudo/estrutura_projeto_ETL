@@ -1,0 +1,9 @@
+site_name: Estrutura de projeto ETL do zero
+theme:
+  name: material
+  palette:
+    primary: red
+  language: pt
+
+repo_name: "Brunocodigoestudo/estrutura_projeto_ETL_do_zero"
+repo_url: "https://github.com/Brunocodigoestudo/estrutura_projeto_ETL"

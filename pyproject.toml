@@ -15,6 +15,12 @@ blue = "^0.9.1"
 pydocstyle = "^6.3.0"
 pip-audit = "^2.7.0"
 taskipy = "^1.12.2"
+mkdocs = "^1.5.3"
+mkdocstrings-python = "^1.8.0"
+pymdown-extensions = "^10.7"
+mkdocs-material = "^9.5.6"
+mkdocs-bootstrap386 = "^0.0.2"
+mkdocs-bootstrap = "^1.1.1"
 
 
 [build-system]
@@ -22,6 +28,12 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.taskipy.tasks]
-format = "isort . 
-&& blue ."
+format = "isort . && blue ."
 run = "python app/main.py"
+
+
+[tool.poetry.scripts]
+stop-server = "kill -9 $(lsof -t -i:8000)"
+
+
+
