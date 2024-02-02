@@ -3,7 +3,7 @@ name: CI Workflow
 on: [pull_request]
 
 jobs:
-  start:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
