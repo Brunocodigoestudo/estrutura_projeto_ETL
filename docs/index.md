@@ -1,17 +1,20 @@
-# Welcome to MkDocs
+# Bem vinda(o) ao projeto de ETL
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+## Workflow
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+```mermaid
+flowchart LR
+    subgraph ETL[Pipeline]
+        A(50 arquivos Excel) --> B[Extract: extract_from_excel] 
+        B[Extract: extract_from_excel] --> |Gera uma lista de Dataframes| C[Transformation: Consolidação do DataFrame]
+        C[Transformation: Consolidação do DataFrame] -->|Gera um Dataframe Consolidado| D[Load: Converte para Excel]
+        D(Load: Converte para Excel) --> |Salva o consolidado em Excel| E(Pasta Output: Um arquivo único Excel)
+   
+    end
+```
 
-## Project layout
+# Função de EXTRAÇÃO de dados
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+::: app.pipeline.extract.extract_from_excel

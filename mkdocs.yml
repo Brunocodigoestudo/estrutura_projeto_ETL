@@ -1,9 +1,21 @@
-site_name: Estrutura de projeto ETL do zero
+site_name: Estrutura do projeto ETL do zero
 theme:
   name: material
   palette:
-    primary: red
+    primary: blue
   language: pt
 
 repo_name: "Brunocodigoestudo/estrutura_projeto_ETL_do_zero"
 repo_url: "https://github.com/Brunocodigoestudo/estrutura_projeto_ETL"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
