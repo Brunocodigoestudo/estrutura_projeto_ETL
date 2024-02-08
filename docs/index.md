@@ -1,6 +1,6 @@
 # Bem vinda(o) ao projeto de ETL
 
-Para a documentação completa, visite [Meu Projeto](https://Brunocodigoestudo.github.io/estrutura_projeto_ETL/).
+Para a documentação completa, visite [Meu Projeto](https://Brunocodigoestudo.github.io/estrutura_projeto_ETL/)
 
 ## Workflow
 
