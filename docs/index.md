@@ -1,6 +1,6 @@
 # Bem vinda(o) ao projeto de ETL
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Para a documentação completa, visite [Meu Projeto](https://Brunocodigoestudo.github.io/estrutura_projeto_ETL/).
 
 ## Workflow
 
@@ -18,3 +18,14 @@ flowchart LR
 # Função de EXTRAÇÃO de dados
 
 ### ::: app.pipeline.extract.extract_from_excel
+
+# Função de TRANSFORMAÇÃO de dados
+
+### ::: app.pipeline.transform.concat_data_frames
+
+# Função de LOAD(CARGA NOS DADOS) de dados
+
+### ::: app.pipeline.load.load_excel
+
+
+

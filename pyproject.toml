@@ -26,13 +26,18 @@ pygments = "^2.17.2"
 pre-commit = "^3.6.0"
 
 
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.taskipy.tasks]
 format = "isort . && blue ."
+test = "poetry run pytest -v"
 start = "python app/main.py"
-kill = 'powershell -File "C:\\Users\\User\\Desktop\\ESTRUTURA_PROJETO_ETL\\kill.ps1"'
+kill = 'powershell -File "C:\\Users\\User\\Desktop\\ESTRUTURA_PROJETO_ETL\\kill.ps1'
+
 
 
