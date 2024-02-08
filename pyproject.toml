@@ -37,6 +37,7 @@ build-backend = "poetry.core.masonry.api"
 format = "isort . && blue ."
 test = "poetry run pytest -v"
 start = "python app/main.py"
-kill = 'powershell -File "C:\\Users\\User\\Desktop\\ESTRUTURA_PROJETO_ETL\\kill.ps1"'
+kill = 'powershell -File "C:\\Users\\User\\Desktop\\ESTRUTURA_PROJETO_ETL\\kill.ps1'
+
 
 
